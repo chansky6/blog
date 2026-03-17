@@ -13,10 +13,12 @@
     "type": "module",
     "license": "ISC",
     "devDependencies": {
-        "vitepress": "^1.6.4",
+        "fs-extra": "^11.3.2",
         "globby": "^15.0.0",
         "gray-matter": "^4.0.3",
-        "fs-extra": "^11.3.2",
-        "vitepress-plugin-comment-with-giscus": "^1.1.15"
+        "mermaid": "^11.13.0",
+        "vitepress": "^1.6.4",
+        "vitepress-plugin-comment-with-giscus": "^1.1.15",
+        "vitepress-plugin-mermaid": "^2.0.17"
     }
 }

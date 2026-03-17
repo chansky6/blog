@@ -1,4 +1,5 @@
 import { defineConfig } from 'vitepress'
+import { withMermaid } from 'vitepress-plugin-mermaid'
 import { getPosts } from './theme/serverUtils'
 
 //每页的文章数量
@@ -6,7 +7,7 @@ const pageSize = 10
 
 const isProd = process.env.NODE_ENV === 'production'
 
-export default defineConfig({
+export default withMermaid(defineConfig({
     title: 'Vitepress blog',
     base: '/',
     cacheDir: './node_modules/vitepress_cache',
@@ -59,4 +60,4 @@ export default defineConfig({
           keepNames: true
       }
       */
-})
+}))
