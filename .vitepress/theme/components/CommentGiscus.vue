@@ -8,12 +8,12 @@ import { useData, useRoute } from 'vitepress'
 
 const { frontmatter, theme } = useData()
 const route = useRoute()
-let { repo, repoId, categoryId } = theme.value.comment
+let { repo, repoId, category = 'General', categoryId } = theme.value.comment
 giscusTalk(
     {
         repo: repo,
         repoId: repoId,
-        category: 'General',
+        category: category,
         categoryId: categoryId,
         mapping: 'pathname',
         inputPosition: 'top',
